@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+    </FrameLayout>
+
+    <!-- Action bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:id="@+id/information_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:contentDescription="Information"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/lines_vertical" />
+
+        <ImageButton
+            android:id="@+id/favourite_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:contentDescription="Sales"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/star" />
+
+        <ImageButton
+            android:id="@+id/order_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:contentDescription="Order"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/food" />
+
+        <ImageButton
+            android:id="@+id/profile_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:contentDescription="Profile"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/person" />
+
+        <ImageButton
+            android:id="@+id/admin_panel_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:contentDescription="Administration control panel"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@drawable/triangular_brackets" />
+
+    </LinearLayout>
+</LinearLayout>
